@@ -24,7 +24,6 @@ import {
   Film,
   Tv,
   Crown,
-  Fire,
   Award
 } from "lucide-react";
 
