@@ -8,6 +8,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 
 const Navbar = () => {
+  const { signOut } = useAuth();
   const [searchQuery, setSearchQuery] = useState("");
   const [isSticky, setIsSticky] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -135,7 +136,7 @@ const Navbar = () => {
                 </button>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="w-48 bg-background border-white/10 text-white">
-                <DropdownMenuItem onClick={() => logout()} className="cursor-pointer">
+                <DropdownMenuItem onClick={signOut} className="cursor-pointer">
                   تسجيل الخروج
                 </DropdownMenuItem>
               </DropdownMenuContent>
@@ -225,3 +226,5 @@ const MobileNavLink = ({ to, icon, label }: { to: string; icon: React.ReactNode;
 };
 
 export default Navbar;
+
+
