@@ -190,22 +190,14 @@ const SignUpPage = () => {
         {step === 2 ? (
           <div className="flex flex-col items-center justify-center py-8">
             <div className="text-gray-700 text-center mb-4">البيانات جاهزة!</div>
-            <div className="text-gray-600 text-center text-sm mb-6">الآن يمكنك شراء كود الاشتراك من المتاجر المعتمدة</div>
+            <div className="text-gray-600 text-center text-sm mb-6">الآن يمكنك الحصول على كود التفعيل من خلال التواصل مع المبرمج</div>
             <div className="flex gap-4 mt-6">
-              <a href="#" className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors">
-                متجر Google Play
+              <a href="https://wtsi.me/966543310024" className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors">
+                whatsapp 
               </a>
-              <a href="#" className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
-                متجر App Store
-              </a>
+              
             </div>
-            <div className="mt-6 text-center">
-              <div className="text-gray-500 text-sm mb-2">أو استخدم أحد الأكواد التجريبية:</div>
-              <div className="text-xs text-gray-400 space-y-1">
-                <div>123456, 789012, 345678</div>
-                <div>901234, 567890, 111111</div>
-              </div>
-            </div>
+            
           </div>
         ) : (
           <div className="flex flex-col gap-4">
