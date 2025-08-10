@@ -22,6 +22,7 @@ import {
   TrendingUp, 
   Globe, 
   Film,
+  Flame,
   Tv,
   Crown,
   Award
@@ -81,7 +82,7 @@ const HomePage = () => {
       isLoading: isLoadingMovies,
       link: "/movies",
       gradient: "from-orange-500 to-red-600",
-      icon: <Fire className="w-5 h-5" />,
+      icon: <Flame className="w-5 h-5" />,
       badge: "HOT",
       badgeColor: "bg-red-500"
     },
